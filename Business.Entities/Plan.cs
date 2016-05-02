@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Business.Entities
 {
-    public class Modulo : BusinessEntity
+    class Plan : BusinessEntity 
     {
         private string descripcion;
+        private int idEspecialidad;
 
         public string Descripcion
         {
@@ -20,6 +21,19 @@ namespace Business.Entities
             set
             {
                 descripcion = value;
+            }
+        }
+
+        public int IdEspecialidad
+        {
+            get
+            {
+                return idEspecialidad;
+            }
+
+            set
+            {
+                idEspecialidad = value;
             }
         }
     }

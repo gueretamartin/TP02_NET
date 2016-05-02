@@ -1,1 +1,2 @@
 C:\Proyectos\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Martin\Desktop\traernet\TP02_NET\UI.Desktop\bin\Debug\UI.Desktop.exe.config
