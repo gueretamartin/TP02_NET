@@ -18,7 +18,7 @@ namespace Business.Entities
             {
                 return anioEspecialidad;
             }
-
+            
             set
             {
                 anioEspecialidad = value;
