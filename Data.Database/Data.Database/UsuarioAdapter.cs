@@ -64,19 +64,19 @@ namespace Data.Database
             return new List<Usuario>(Usuarios);
         }
 
-        public Business.Entities.Usuario GetOne(int ID)
+        public Business.Entities.Usuario GetOne(string nombreUs)
         {
-            return Usuarios.Find(delegate(Usuario u) { return u.ID == ID; });
+            return Usuarios.Find(delegate(Usuario u) { return u.NombreUsuario == nombreUs; });
         }
 
         public void Delete(int ID)
         {
-            Usuarios.Remove(this.GetOne(ID));
+            Usuarios.Remove(this.GetOne(nombreUs));
         }
 
         public void Save(Usuario usuario)
         {
-            if (usuario.State == BusinessEntity.States.New)
+            if (usuario.states == BusinessEntity.States.New)
             {
                 int NextID = 0;
                 foreach (Usuario usr in Usuarios)
@@ -89,15 +89,15 @@ namespace Data.Database
                 usuario.ID = NextID + 1;
                 Usuarios.Add(usuario);
             }
-            else if (usuario.State == BusinessEntity.States.Deleted)
+            else if (usuario.states == BusinessEntity.States.Deleted)
             {
                 this.Delete(usuario.ID);
             }
-            else if (usuario.State == BusinessEntity.States.Modified)
+            else if (usuario.states == BusinessEntity.States.Modified)
             {
                 Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.ID == usuario.ID; })]=usuario;
             }
-            usuario.State = BusinessEntity.States.Unmodified;            
+            usuario.states = BusinessEntity.States.Unmodified;            
         }
     }
 }
