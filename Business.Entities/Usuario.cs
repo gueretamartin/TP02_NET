@@ -92,5 +92,16 @@ namespace Business.Entities
                 habilitado = value;
             }
         }
+
+        public  Usuario(string nombreUsu, string clave, string nombre, string apellido, string email, bool habilitado) {
+
+            this.NombreUsuario = nombreUsu;
+            this.Clave = clave;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Email = email;
+            this.Habilitado = habilitado;
+        }
+        public Usuario() { }
     }
 }

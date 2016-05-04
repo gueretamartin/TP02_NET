@@ -92,13 +92,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj">
+    <ProjectReference Include="..\Business.Entities\Entidades.csproj">
       <Project>{2a45122b-084f-4b85-be42-aa8309adc053}</Project>
-      <Name>Business.Entities</Name>
+      <Name>Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Negocio\Business.Logic.csproj">
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
       <Project>{fdf319f3-9d20-46c4-9570-e5c2a643e472}</Project>
-      <Name>Business.Logic</Name>
+      <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

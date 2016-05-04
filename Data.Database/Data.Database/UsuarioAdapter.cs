@@ -12,7 +12,7 @@ namespace Data.Database
         // Al modificar este proyecto para que acceda a la base de datos esta será eliminada
         private static List<Usuario> _Usuarios;
 
-        private static List<Usuario> Usuarios
+       /* private static List<Usuario> Usuarios
         {
             get
             {
@@ -56,22 +56,25 @@ namespace Data.Database
                 }
                 return _Usuarios;
             }
-        }
+        }*/
         #endregion
-
-        public List<Usuario> GetAll()
+        
+        CatalogoUsuario cu = new CatalogoUsuario();
+        public List<Usuario> dameTodos()
         {
-            return new List<Usuario>(Usuarios);
+            List<Usuario> usuarios = new List<Usuario>();
+            usuarios = cu.buscarUsuarios() ;
+            return usuarios;
         }
 
-        public Business.Entities.Usuario GetOne(string nombreUs)
+        public Business.Entities.Usuario GetOne(int Id)
         {
-            return Usuarios.Find(delegate(Usuario u) { return u.NombreUsuario == nombreUs; });
+            return Usuarios.Find(delegate(Usuario u) { return u.Id == Id; });
         }
 
         public void Delete(int ID)
         {
-            Usuarios.Remove(this.GetOne(nombreUs));
+            Usuarios.Remove(this.GetOne(ID));
         }
 
         public void Save(Usuario usuario)
@@ -81,21 +84,21 @@ namespace Data.Database
                 int NextID = 0;
                 foreach (Usuario usr in Usuarios)
                 {
-                    if (usr.ID > NextID)
+                    if (usr.Id > NextID)
                     {
-                        NextID = usr.ID;
+                        NextID = usr.Id;
                     }
                 }
-                usuario.ID = NextID + 1;
+                usuario.Id = NextID + 1;
                 Usuarios.Add(usuario);
             }
             else if (usuario.states == BusinessEntity.States.Deleted)
             {
-                this.Delete(usuario.ID);
+                this.Delete(usuario.Id);
             }
             else if (usuario.states == BusinessEntity.States.Modified)
             {
-                Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.ID == usuario.ID; })]=usuario;
+                Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.Id== usuario.Id; })]=usuario;
             }
             usuario.states = BusinessEntity.States.Unmodified;            
         }

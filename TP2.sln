@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Desktop", "UI.Desktop\UI.Desktop.csproj", "{2D7DEF48-7948-4264-A5D9-CAC3987FD353}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritorio", "UI.Desktop\Escritorio.csproj", "{2D7DEF48-7948-4264-A5D9-CAC3987FD353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Logic", "Negocio\Business.Logic.csproj", "{FDF319F3-9D20-46C4-9570-E5C2A643E472}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{FDF319F3-9D20-46C4-9570-E5C2A643E472}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{9C9FA0D5-21B6-4631-B530-51202A3A2B3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Entities", "Business.Entities\Business.Entities.csproj", "{2A45122B-084F-4B85-BE42-AA8309ADC053}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Business.Entities\Entidades.csproj", "{2A45122B-084F-4B85-BE42-AA8309ADC053}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UI.Web", "..\TP02\UI.Web\", "{A7DECE02-0946-422A-96E0-E800573AFB70}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -33,7 +33,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UI.Web", "..\TP02\UI.Web\",
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Database", "Data.Database\Data.Database\Data.Database.csproj", "{18D1C50F-58E0-4D94-B05B-4A95A146E6BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Data.Database\Data.Database\Datos.csproj", "{18D1C50F-58E0-4D94-B05B-4A95A146E6BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
