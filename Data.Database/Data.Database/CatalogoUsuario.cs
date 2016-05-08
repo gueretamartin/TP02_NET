@@ -17,7 +17,7 @@ namespace Data.Database
             usuarios.Add(usu1);
             Usuario usu2 = new Usuario("facualvarez", "12345", "Facundo", "Alvarez", "alvfacu@hotmail.com", true);
             usuarios.Add(usu2);
-            Usuario usu3 = new Usuario("nicocda", "12333", "Nicolas", "Giordan", "nicocda@hotmail.com", true);
+            Usuario usu3 = new Usuario("nicocda", "12333", "Nicolas", "Giordano", "nicocda@hotmail.com", true);
             usuarios.Add(usu3);
             return usuarios;
         }

@@ -10,6 +10,10 @@ namespace Negocio
 {
     public class UsuarioLogic : BusinessLogic
     {
+        public UsuarioLogic()
+        {
+
+        }
         //Instancio un Adaptador de Usuario
         //Me va a devolver los datos de la BD
 

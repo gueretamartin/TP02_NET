@@ -12,7 +12,7 @@ namespace Data.Database
         // Al modificar este proyecto para que acceda a la base de datos esta será eliminada
         private static List<Usuario> _Usuarios;
 
-       /* private static List<Usuario> Usuarios
+        private static List<Usuario> Usuarios
         {
             get
             {
@@ -21,46 +21,43 @@ namespace Data.Database
                     _Usuarios = new List<Business.Entities.Usuario>();
                     Business.Entities.Usuario usr;
                     usr = new Business.Entities.Usuario();
-                    usr.ID = 1;
-                    usr.State = Business.Entities.BusinessEntity.States.Unmodified;
+                    usr.Id = 1;
                     usr.Nombre = "Casimiro";
                     usr.Apellido = "Cegado";
                     usr.NombreUsuario = "casicegado";
                     usr.Clave = "miro";
-                    usr.EMail = "casimirocegado@gmail.com";
+                    usr.Email = "casimirocegado@gmail.com";
                     usr.Habilitado = true;
                     _Usuarios.Add(usr);
 
                     usr = new Business.Entities.Usuario();
-                    usr.ID = 2;
-                    usr.State = Business.Entities.BusinessEntity.States.Unmodified;
+                    usr.Id = 2;
                     usr.Nombre = "Armando Esteban";
                     usr.Apellido = "Quito";
                     usr.NombreUsuario = "aequito";
                     usr.Clave = "carpintero";
-                    usr.EMail = "armandoquito@gmail.com";
+                    usr.Email = "armandoquito@gmail.com";
                     usr.Habilitado = true;
                     _Usuarios.Add(usr);
 
                     usr = new Business.Entities.Usuario();
-                    usr.ID = 3;
-                    usr.State = Business.Entities.BusinessEntity.States.Unmodified;
+                    usr.Id = 3;
                     usr.Nombre = "Alan";
                     usr.Apellido = "Brado";
                     usr.NombreUsuario = "alanbrado";
                     usr.Clave = "abrete sesamo";
-                    usr.EMail = "alanbrado@gmail.com";
+                    usr.Email = "alanbrado@gmail.com";
                     usr.Habilitado = true;
                     _Usuarios.Add(usr);
 
                 }
                 return _Usuarios;
             }
-        }*/
+        }
         #endregion
         
         CatalogoUsuario cu = new CatalogoUsuario();
-        public List<Usuario> dameTodos()
+        public List<Business.Entities.Usuario> dameTodos()
         {
             List<Usuario> usuarios = new List<Usuario>();
             usuarios = cu.buscarUsuarios() ;

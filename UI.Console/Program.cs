@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Entities
+namespace UI.Console
 {
-    public class Class1
+    class Program
     {
+        static void Main(string[] args)
+        {
+            new Usuario().Menu();
+        }
     }
 }
