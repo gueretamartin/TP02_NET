@@ -1,0 +1,4 @@
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Entidades\bin\Debug\Entidades.dll
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Entidades\obj\Debug\Entidades.dll
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Entidades\obj\Debug\Entidades.pdb

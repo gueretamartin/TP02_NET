@@ -1,0 +1,9 @@
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\bin\Debug\Negocio.dll
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\obj\Debug\Negocio.dll
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\bin\Debug\Datos.dll
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\bin\Debug\Entidades.dll
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\bin\Debug\Datos.pdb
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache

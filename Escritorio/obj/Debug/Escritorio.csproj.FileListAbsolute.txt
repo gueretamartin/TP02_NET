@@ -1,0 +1,7 @@
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\bin\Debug\Escritorio.exe.config
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\bin\Debug\Escritorio.exe
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\bin\Debug\Escritorio.pdb
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\obj\Debug\Escritorio.Properties.Resources.resources
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\obj\Debug\Escritorio.csproj.GenerateResource.Cache
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\obj\Debug\Escritorio.exe
+C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Escritorio\obj\Debug\Escritorio.pdb
