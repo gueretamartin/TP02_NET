@@ -5,3 +5,10 @@ C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Datos\bin\Debug\Entidades.pdb
 C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Datos\obj\Debug\Datos.dll
 C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Datos\obj\Debug\Datos.pdb
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\bin\Debug\Datos.dll
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\bin\Debug\Datos.pdb
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\bin\Debug\Entidades.dll
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\bin\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\obj\Debug\Datos.dll
+C:\Users\Martin\Desktop\traer\TP02_NET\Datos\obj\Debug\Datos.pdb

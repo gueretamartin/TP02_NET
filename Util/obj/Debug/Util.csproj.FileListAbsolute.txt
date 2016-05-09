@@ -2,3 +2,8 @@ C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Util\bin\Debug\Util.dll
 C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Util\bin\Debug\Util.pdb
 C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Util\obj\Debug\Util.dll
 C:\Users\Martin\Desktop\nuevo\Sistema_Academia\Util\obj\Debug\Util.pdb
+C:\Users\Martin\Desktop\traer\TP02_NET\Util\bin\Debug\Util.dll
+C:\Users\Martin\Desktop\traer\TP02_NET\Util\bin\Debug\Util.pdb
+C:\Users\Martin\Desktop\traer\TP02_NET\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\traer\TP02_NET\Util\obj\Debug\Util.dll
+C:\Users\Martin\Desktop\traer\TP02_NET\Util\obj\Debug\Util.pdb

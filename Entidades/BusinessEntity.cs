@@ -27,8 +27,8 @@ namespace Entidades
                 id = value;
             }
         }
-
-        public States states
+        private States states;
+        public States State
         {
             get
             {

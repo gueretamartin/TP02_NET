@@ -26,9 +26,16 @@ namespace Negocio
         //Metodo que le pide al Adaptador que le de un suario
         public Usuario dameUno(int id)
         {
-            Usuario usu = new Usuario();
-            usu = UsuarioData.dameUno(id);
-            return usu;
+            Usuario usr = new Usuario();
+            // usu = usuarioData.dameUno(id);
+            usr.Id = 3;
+            usr.Nombre = "Alan";
+            usr.Apellido = "Brado";
+            usr.NombreUsuario = "alanbrado";
+            usr.Clave = "abrete sesamo";
+            usr.Email = "alanbrado@gmail.com";
+            usr.Habilitado = true;
+            return usr;
         }
 
         public List<Usuario> dameTodos()

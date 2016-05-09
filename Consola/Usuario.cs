@@ -15,13 +15,13 @@ namespace Consola
         private ControladorUsuario UsuarioNegocio = new ControladorUsuario();
         public void Menu()
         {
-            System.Console.WriteLine("  Seleccione la opcion que desee realizar:"+
-                                        "1– Listado General/n"+
-                                        "2– Consulta / n"+
-                                        "3– Agregar / n"+
-                                        "4 - Modificar / n"+
-                                        "5 - Eliminar / n"+
-                                        "6 - Salir");
+            Console.WriteLine("  Seleccione la opcion que desee realizar:");
+            Console.WriteLine("1– Listado General");
+            Console.WriteLine("2– Consulta");
+            Console.WriteLine("3– Agregar ");
+            Console.WriteLine("4 - Modificar ");
+            Console.WriteLine("5 - Eliminar");
+            Console.WriteLine("6 - Salir");
             string opcion = System.Console.ReadLine();
             int rta = int.Parse(opcion);
             if (rta == 1) {
@@ -59,14 +59,14 @@ namespace Consola
         }
         public void MostrarDatos(Entidades.Usuario usu)
         {
-            System.Console.WriteLine("Usuario: (0)", usu.Id);
-            System.Console.WriteLine("\t\tNombre: (0)", usu.Nombre);
-            System.Console.WriteLine("\t\tApellido:(0)", usu.Apellido);
-            System.Console.WriteLine("\t\tNombre de Usuario: (0)", usu.NombreUsuario);
-            System.Console.WriteLine("\t\tClave: (0)", usu.Clave);
-            System.Console.WriteLine("\t\tEmail: (0)", usu.Email);
-            System.Console.WriteLine("\t\tHabilitado: (0)", usu.Habilitado);
-            System.Console.WriteLine();
+            Console.WriteLine("\t\tUsuario:" +  usu.Id);
+            System.Console.WriteLine("\t\tNombre: "+ usu.Nombre);
+            Console.WriteLine("\t\tApellido: "+ usu.Apellido);
+            System.Console.WriteLine("\t\tNombre de Usuario: "+ usu.NombreUsuario);
+            System.Console.WriteLine("\t\tClave: "+ usu.Clave);
+            System.Console.WriteLine("\t\tEmail: "+ usu.Email);
+            System.Console.WriteLine("\t\tHabilitado: "+ usu.Habilitado);
+            System.Console.ReadKey();
         }
     }
     

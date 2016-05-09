@@ -66,7 +66,21 @@ namespace Datos
 
         public Entidades.Usuario dameUno(int Id)
         {
-            return Usuarios.Find(delegate(Usuario u) { return u.Id == Id; });
+            Usuario usa= new Usuario();
+            Usuario usr = new Usuario();
+            usr.Id = 3;
+            usr.Nombre = "Alan";
+            usr.Apellido = "Brado";
+            usr.NombreUsuario = "alanbrado";
+            usr.Clave = "abrete sesamo";
+            usr.Email = "alanbrado@gmail.com";
+            usr.Habilitado = true;
+            if (Id == usr.Id) { return usr; }
+            else return usa;
+            
+
+
+            // return Usuarios.Find(delegate(Usuario u) { return u.Id == Id; });
         }
 
         public void EliminarUsuario(int ID)
@@ -76,7 +90,7 @@ namespace Datos
 
         public void GuardarUsuario(Usuario usuario)
         {
-            if (usuario.states == Entidades.BusinessEntity.States.New)
+            if (usuario.State == Entidades.BusinessEntity.States.New)
             {
                 int NextID = 0;
                 foreach (Usuario usr in Usuarios)
@@ -89,15 +103,15 @@ namespace Datos
                 usuario.Id = NextID + 1;
                 Usuarios.Add(usuario);
             }
-            else if (usuario.states == Entidades.BusinessEntity.States.Deleted)
+            else if (usuario.State == Entidades.BusinessEntity.States.Deleted)
             {
                 this.EliminarUsuario(usuario.Id);
             }
-            else if (usuario.states == Entidades.BusinessEntity.States.Modified)
+            else if (usuario.State == Entidades.BusinessEntity.States.Modified)
             {
                 Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.Id== usuario.Id; })]=usuario;
             }
-            usuario.states = BusinessEntity.States.Unmodified;            
+            usuario.State = BusinessEntity.States.Unmodified;            
         }
     }
 }
