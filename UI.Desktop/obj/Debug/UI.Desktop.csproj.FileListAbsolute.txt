@@ -1,5 +1,0 @@
-C:\Proyectos\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
-C:\Users\Martin\Desktop\traernet\TP02_NET\UI.Desktop\bin\Debug\UI.Desktop.exe.config
-C:\Users\Martin\Desktop\traernet\TP02_NET\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
-C:\Users\Martin\Desktop\traernet\TP02_NET\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
-C:\Users\Martin\Desktop\traernet\TP02_NET\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache

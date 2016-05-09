@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Business.Entities;
+using Entidades;
 using Negocio;
 
 
@@ -28,8 +28,8 @@ namespace UI.Console
         public void ListadoGeneral()
         {
             System.Console.Clear();
-            List<Business.Entities.Usuario> usuarios = UsuarioNegocio.dameTodos();
-            foreach(Business.Entities.Usuario usu in usuarios)
+            List<Entidades.Usuario> usuarios = UsuarioNegocio.dameTodos();
+            foreach(Entidades.Usuario usu in usuarios)
             {
                 MostrarDatos(usu);
             }
@@ -51,7 +51,7 @@ namespace UI.Console
         {
 
         }
-        public void MostrarDatos(Business.Entities.Usuario usu)
+        public void MostrarDatos(Entidades.Usuario usu)
         {
             System.Console.WriteLine("Usuario: (0)", usu.Id);
             System.Console.WriteLine("\t\tNombre: (0)", usu.Nombre);
