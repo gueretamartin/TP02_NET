@@ -16,44 +16,37 @@ namespace Negocio
         }
         //Instancio un Adaptador de Usuario
         //Me va a devolver los datos de la BD
-
-        private UsuarioDatos usuarioData;
-        public UsuarioDatos UsuarioData
-        {
-            get { return usuarioData; }
-            set { usuarioData = value;}
-        }
-        //Metodo que le pide al Adaptador que le de un suario
+       
+        private UsuarioDatos usuarioData = new UsuarioDatos();
+        
+        //Metodo que le pide al Adaptador que le de un usuario
         public Usuario dameUno(int id)
         {
             Usuario usr = new Usuario();
-            // usu = usuarioData.dameUno(id);
-            usr.Id = 3;
-            usr.Nombre = "Alan";
-            usr.Apellido = "Brado";
-            usr.NombreUsuario = "alanbrado";
-            usr.Clave = "abrete sesamo";
-            usr.Email = "alanbrado@gmail.com";
-            usr.Habilitado = true;
+            usr = usuarioData.dameUno(id);
             return usr;
         }
 
+        //Metodo que le pide todos los usuarios
         public List<Usuario> dameTodos()
         {
             List<Usuario> usuarios = new List<Usuario>();
-            usuarios = UsuarioData.dameTodos();
+            usuarios = usuarioData.dameTodos();
             return usuarios;
         }
 
+        //Metodo que le pide que guarde el usuario
         public void guardarUsuario(Usuario usu)
         {
             Usuario usuario = usu;
-            UsuarioData.GuardarUsuario(usuario);
+            usuarioData.GuardarUsuario(usuario);
         }
+
+        //Metodo que le pide que elimine el usuario
         public void eliminarUsuario(Usuario usu)
         {
             Usuario usuario = usu;
-            UsuarioData.EliminarUsuario(usuario.Id);
+            usuarioData.EliminarUsuario(usuario.Id);
         }
     }
 }

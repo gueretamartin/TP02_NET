@@ -6,3 +6,8 @@ C:\Users\Martin\Desktop\traer\TP02_NET\Entidades\bin\Debug\Entidades.dll
 C:\Users\Martin\Desktop\traer\TP02_NET\Entidades\bin\Debug\Entidades.pdb
 C:\Users\Martin\Desktop\traer\TP02_NET\Entidades\obj\Debug\Entidades.dll
 C:\Users\Martin\Desktop\traer\TP02_NET\Entidades\obj\Debug\Entidades.pdb
+D:\TP02_NET-master\Entidades\bin\Debug\Entidades.dll
+D:\TP02_NET-master\Entidades\bin\Debug\Entidades.pdb
+D:\TP02_NET-master\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\TP02_NET-master\Entidades\obj\Debug\Entidades.dll
+D:\TP02_NET-master\Entidades\obj\Debug\Entidades.pdb

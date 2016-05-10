@@ -10,31 +10,88 @@ using Negocio;
 namespace Consola
 {
     
+
     public class Usuario
     {
-        private ControladorUsuario UsuarioNegocio = new ControladorUsuario();
+        private ControladorUsuario cu = new ControladorUsuario();
+        int rta = 0;
+
+        //Menu Interactivo
         public void Menu()
         {
+          while (rta != 6) { 
             Console.WriteLine("  Seleccione la opcion que desee realizar:");
             Console.WriteLine("1– Listado General");
-            Console.WriteLine("2– Consulta");
+            Console.WriteLine("2– Consultar (Mostrar Datos de un Ussuario)");
             Console.WriteLine("3– Agregar ");
             Console.WriteLine("4 - Modificar ");
             Console.WriteLine("5 - Eliminar");
             Console.WriteLine("6 - Salir");
             string opcion = System.Console.ReadLine();
-            int rta = int.Parse(opcion);
-            if (rta == 1) {
+            rta = int.Parse(opcion);
+            switch (rta) {
 
-                this.MostrarDatos(UsuarioNegocio.dameUno(1));
+                case 1:
+                    {
+                            Console.Clear();
+                            this.MostrarDatos(cu.dameTodos());
+                            Console.ReadKey();
+                            break;
+                    }
+                case 2:
+                    {   
+                        try
+                        {
+                            Console.Clear();
+                            this.Consultar();
+                            break; 
+                        }
+                            //Por si no introduce un entero
+                        catch (FormatException)
+                        {
+
+                          Console.WriteLine("Introduzca Enteros");
+                          break;
+                        }
+                            //Si me pone un ID que no corresponde
+                        catch (Exception)
+                        {
+
+                            Console.WriteLine("Introduzca los datos correctamente");
+                            break;
+                        }
+
+                    }
+                case 3: 
+                    {
+                            this.Agregar();
+                            break;
+                     }
+                case 4: {
+                            Console.Clear();
+                            this.Modificar();
+                            break; 
+                }
+                case 5:
+                    {
+                            Console.Clear();
+                            this.Eliminar();
+                            break;
+                    }
+                case 6:
+                    {
+                            Environment.Exit(0);
+                            break;  
+                    }
+                
 
             }
         }
-       
+        }
         public void ListadoGeneral()
         {
             System.Console.Clear();
-            List<Entidades.Usuario> usuarios = UsuarioNegocio.dameTodos();
+            List<Entidades.Usuario> usuarios = cu.dameTodos();
             foreach(Entidades.Usuario usu in usuarios)
             {
                 MostrarDatos(usu);
@@ -43,20 +100,60 @@ namespace Consola
         }
         public void Consultar()
         {
-
+            Console.WriteLine("Ingrese el Id del usuario a buscar");
+            string idIntroducido = System.Console.ReadLine();
+            int idABuscar = int.Parse(idIntroducido);
+            this.MostrarDatos(cu.dameUno(idABuscar));
         }
         public void Agregar()
         {
-
+            Entidades.Usuario usuario = new Entidades.Usuario();
+            System.Console.WriteLine("Ingrese los datos del usuario a registrar");
+            System.Console.WriteLine("Nombre: ");
+            usuario.NombreUsuario = Console.ReadLine();
+            System.Console.WriteLine("Apellido: ");
+            usuario.Apellido = Console.ReadLine();
+            System.Console.WriteLine("Clave: ");
+            usuario.Clave = Console.ReadLine();
+            System.Console.WriteLine("email: ");
+            usuario.Email = Console.ReadLine();
+            usuario.Habilitado = true;
+            cu.guardarUsuario(usuario);
+            
         }
         public void Modificar()
         {
-
+            Console.WriteLine("Introduzca el ID del Usuario a modificar");
+            string idIntroducido = System.Console.ReadLine();
+            int idABuscar = int.Parse(idIntroducido);
+            Entidades.Usuario usu = new Entidades.Usuario();
+            usu = cu.dameUno(idABuscar);
+            this.MostrarDatos(usu);
+            cu.eliminarUsuario(usu);
+            Console.WriteLine("Modifique los datos");
+            System.Console.WriteLine("Nombre: ");
+            usu.NombreUsuario = Console.ReadLine();
+            System.Console.WriteLine("Apellido: ");
+            usu.Apellido = Console.ReadLine();
+            System.Console.WriteLine("Clave: ");
+            usu.Clave = Console.ReadLine();
+            System.Console.WriteLine("email: ");
+            usu.Email = Console.ReadLine();
+            usu.Habilitado = true;
+            usu.State = Entidades.Usuario.States.Modified;
+            cu.guardarUsuario(usu);
         }
         public void Eliminar()
         {
-
+            Console.WriteLine("Ingrese el Id del usuario a eliminar");
+            string idIntroducido = System.Console.ReadLine();
+            int idABuscar = int.Parse(idIntroducido);
+            cu.eliminarUsuario(cu.dameUno(idABuscar));
         }
+     
+        
+        
+        //USO DE SOBRECARGA PARA LOS METODOS MOSTRAR USUARIO, UNO PARA UN SOLO USUARIO Y OTRO PARA LISTA DE USUARIOS
         public void MostrarDatos(Entidades.Usuario usu)
         {
             Console.WriteLine("\t\tUsuario:" +  usu.Id);
@@ -66,7 +163,17 @@ namespace Consola
             System.Console.WriteLine("\t\tClave: "+ usu.Clave);
             System.Console.WriteLine("\t\tEmail: "+ usu.Email);
             System.Console.WriteLine("\t\tHabilitado: "+ usu.Habilitado);
-            System.Console.ReadKey();
+            
+        }
+        //Cambiamos el Metodo ListadoGeneral del TP por MostrarDatos usando sobrecarga.
+        public void MostrarDatos(List<Entidades.Usuario> usus)
+        {
+            
+            foreach(Entidades.Usuario usu in usus)
+            {
+                MostrarDatos(usu);
+                Console.WriteLine("");
+            }
         }
     }
     

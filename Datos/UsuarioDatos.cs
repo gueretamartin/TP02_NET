@@ -66,21 +66,8 @@ namespace Datos
 
         public Entidades.Usuario dameUno(int Id)
         {
-            Usuario usa= new Usuario();
-            Usuario usr = new Usuario();
-            usr.Id = 3;
-            usr.Nombre = "Alan";
-            usr.Apellido = "Brado";
-            usr.NombreUsuario = "alanbrado";
-            usr.Clave = "abrete sesamo";
-            usr.Email = "alanbrado@gmail.com";
-            usr.Habilitado = true;
-            if (Id == usr.Id) { return usr; }
-            else return usa;
             
-
-
-            // return Usuarios.Find(delegate(Usuario u) { return u.Id == Id; });
+            return Usuarios.Find(delegate(Usuario u) { return u.Id == Id; });
         }
 
         public void EliminarUsuario(int ID)

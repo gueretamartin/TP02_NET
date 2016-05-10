@@ -12,3 +12,10 @@ C:\Users\Martin\Desktop\traer\TP02_NET\Datos\bin\Debug\Entidades.pdb
 C:\Users\Martin\Desktop\traer\TP02_NET\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Users\Martin\Desktop\traer\TP02_NET\Datos\obj\Debug\Datos.dll
 C:\Users\Martin\Desktop\traer\TP02_NET\Datos\obj\Debug\Datos.pdb
+D:\TP02_NET-master\Datos\bin\Debug\Datos.dll
+D:\TP02_NET-master\Datos\bin\Debug\Datos.pdb
+D:\TP02_NET-master\Datos\bin\Debug\Entidades.dll
+D:\TP02_NET-master\Datos\bin\Debug\Entidades.pdb
+D:\TP02_NET-master\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+D:\TP02_NET-master\Datos\obj\Debug\Datos.dll
+D:\TP02_NET-master\Datos\obj\Debug\Datos.pdb
