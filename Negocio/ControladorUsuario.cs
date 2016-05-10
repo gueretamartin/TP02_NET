@@ -22,9 +22,7 @@ namespace Negocio
         //Metodo que le pide al Adaptador que le de un usuario
         public Usuario dameUno(int id)
         {
-            Usuario usr = new Usuario();
-            usr = usuarioData.dameUno(id);
-            return usr;
+            return usuarioData.dameUno(id);
         }
 
         //Metodo que le pide todos los usuarios

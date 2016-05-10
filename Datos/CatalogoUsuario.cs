@@ -6,21 +6,57 @@ namespace Datos
 {
     class CatalogoUsuario : Adapter
     {
+        //SINGLETON
+        private static CatalogoUsuario instance;
+        private CatalogoUsuario() { }
+        public static CatalogoUsuario Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new CatalogoUsuario();
+                }
+                return instance;
+            }
+        }
+        //ARRAYLIST ESTATICO
+        static  List<Usuario> usuarios = new List<Usuario>();
 
         public List<Usuario> buscarUsuarios()
         {
-            List<Usuario> usuarios = new List<Usuario>();
-            Usuario usu1 = new Usuario("martinguereta","123","Martin","Guereta","tincho_el77@hotmail.com",true);
-            usuarios.Add(usu1);
-            Usuario usu2 = new Usuario("facualvarez", "12345", "Facundo", "Alvarez", "alvfacu@hotmail.com", true);
-            usuarios.Add(usu2);
-            Usuario usu3 = new Usuario("nicocda", "12333", "Nicolas", "Giordano", "nicocda@hotmail.com", true);
-            usuarios.Add(usu3);
             return usuarios;
         }
-       
+
+        public void agregarUsuarios()
+        {
+            Usuario usu = new Usuario("martinguereta", "123", "Martin", "Guereta", "tincho_el77@hotmail.com", true);
+            usuarios.Add(usu);
+            usu = new Usuario("facualvarez", "12345", "Facundo", "Alvarez", "alvfacu@hotmail.com", true);
+            usuarios.Add(usu);
+            usu = new Usuario("nicocda", "12333", "Nicolas", "Giordano", "nico-cda@hotmail.com", true);
+            usuarios.Add(usu);
+            usu = new Usuario("peretto5", "123paloma", "Leonardo", "Peretti", "leo.peretti5@gmail.com", true);
+            usuarios.Add(usu);
         }
+     
+        public void modificarUsuario(Usuario usuario )
+        {
+            foreach(Usuario usu in usuarios)
+            {
+                if(usuario.NombreUsuario == usu.NombreUsuario)
+                {
+                    usu.Clave = usuario.Clave;
+                    usu.Apellido = usuario.Apellido;
+                    usu.Email = usuario.Email;
+                    usu.Habilitado = usuario.Habilitado;
+                    usu.Nombre = usuario.Nombre;
+                }
+            }
+        }
+          
     }
+}
 
 
 /* String query = "select * from usuarios";

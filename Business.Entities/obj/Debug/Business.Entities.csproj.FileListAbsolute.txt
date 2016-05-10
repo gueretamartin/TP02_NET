@@ -1,0 +1,5 @@
+C:\Proyectos\TP02_NET\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Proyectos\TP02_NET\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Proyectos\TP02_NET\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Proyectos\TP02_NET\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Proyectos\TP02_NET\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache

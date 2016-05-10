@@ -56,11 +56,11 @@ namespace Datos
         }
         #endregion
         
-        CatalogoUsuario cu = new CatalogoUsuario();
+        //CatalogoUsuario cu = new CatalogoUsuario();
         public List<Entidades.Usuario> dameTodos()
         {
-            List<Usuario> usuarios = new List<Usuario>();
-            usuarios = Usuarios ;
+            List<Entidades.Usuario> usuarios = new List<Usuario>();
+            usuarios = Usuarios;
             return usuarios;
         }
 
@@ -94,11 +94,11 @@ namespace Datos
             {
                 this.EliminarUsuario(usuario.Id);
             }
-            else if (usuario.State == Entidades.BusinessEntity.States.Modified)
+            else if (usuario.State == BusinessEntity.States.Modified)
             {
-                Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.Id== usuario.Id; })]=usuario;
+                Usuarios[Usuarios.FindIndex(delegate (Usuario u) { return u.Id == usuario.Id; })] = usuario;
             }
-            usuario.State = BusinessEntity.States.Unmodified;            
+            usuario.State = BusinessEntity.States.Unmodified;
         }
     }
 }

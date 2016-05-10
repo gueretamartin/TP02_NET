@@ -124,23 +124,23 @@ namespace Consola
         public void Modificar()
         {
             Console.WriteLine("Introduzca el ID del Usuario a modificar");
-            string idIntroducido = System.Console.ReadLine();
-            int idABuscar = int.Parse(idIntroducido);
+            var ki = Console.ReadKey();
+            int idIntroducido = int.Parse(ki.KeyChar.ToString());
             Entidades.Usuario usu = new Entidades.Usuario();
-            usu = cu.dameUno(idABuscar);
+            usu = cu.dameUno(idIntroducido);
             this.MostrarDatos(usu);
-            cu.eliminarUsuario(usu);
             Console.WriteLine("Modifique los datos");
             System.Console.WriteLine("Nombre: ");
-            usu.NombreUsuario = Console.ReadLine();
+            usu.Nombre = Console.ReadLine();
             System.Console.WriteLine("Apellido: ");
             usu.Apellido = Console.ReadLine();
             System.Console.WriteLine("Clave: ");
             usu.Clave = Console.ReadLine();
             System.Console.WriteLine("email: ");
             usu.Email = Console.ReadLine();
+            usu.Id = idIntroducido;
             usu.Habilitado = true;
-            usu.State = Entidades.Usuario.States.Modified;
+            usu.State = BusinessEntity.States.Modified;
             cu.guardarUsuario(usu);
         }
         public void Eliminar()
