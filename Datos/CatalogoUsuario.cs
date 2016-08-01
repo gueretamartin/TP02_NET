@@ -8,6 +8,7 @@ namespace Datos
 {
     public class CatalogoUsuario : Conexion
     {
+        #region
         //SINGLETON
         private static CatalogoUsuario instance;
 
@@ -24,7 +25,7 @@ namespace Datos
         }
         //ARRAYLIST ESTATICO
         static List<Usuario> usuarios = new List<Usuario>();
-
+        #endregion
 
         public List<Usuario> buscarUsuarios()
         {

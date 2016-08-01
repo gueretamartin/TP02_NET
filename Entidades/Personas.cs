@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Personas : BusinessEntity
+    public class Personas : BusinessEntity
     {
+        private int idPersonas;
         private string apellido;
         private string direccion;
         private string email;
@@ -16,7 +17,21 @@ namespace Entidades
         private int legajo;
         private string nombre;
         private string telefono;
-        //tipo persona?
+        private TipoPersona tipoPersona;
+
+
+        public int IdPersonas
+        {
+            get
+            {
+                return idPersonas;
+            }
+
+            set
+            {
+                idPersonas = value;
+            }
+        }
         public string Apellido
         {
             get
@@ -69,7 +84,7 @@ namespace Entidades
             }
         }
 
-        internal Plan Plan
+        public Plan Plan
         {
             get
             {
@@ -79,6 +94,19 @@ namespace Entidades
             set
             {
                 plan = value;
+            }
+        }
+
+        public TipoPersona TipoPersona
+        {
+            get
+            {
+                return tipoPersona;
+            }
+
+            set
+            {
+                tipoPersona = value;
             }
         }
 

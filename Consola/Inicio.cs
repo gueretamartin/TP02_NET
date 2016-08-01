@@ -10,7 +10,7 @@ namespace Consola
     {
         static void Main(string[] args)
         {
-            new Usuario().Menu();
+          //  new Usuario().Menu();
         }
     }
 }

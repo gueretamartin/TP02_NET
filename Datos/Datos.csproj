@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter.cs" />
+    <Compile Include="CatalogoDocente.cs" />
+    <Compile Include="CatalogoEspecialidad.cs" />
+    <Compile Include="CatalogoPlanes.cs" />
     <Compile Include="CatalogoUsuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

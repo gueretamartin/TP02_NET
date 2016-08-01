@@ -1,16 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entidades
+﻿namespace Entidades
 {
-    public class Plan : BusinessEntity 
+    public  class Plan : BusinessEntity 
     {
+        private int idPlan;
         private string descripcionPlan;
         private Especialidad especialidad;
 
+       
+        public int IdPlan
+        {
+            get
+            {
+                return idPlan;
+            }
+
+            set
+            {
+                idPlan = value;
+            }
+        }
         public string DescripcionPlan
         {
             get

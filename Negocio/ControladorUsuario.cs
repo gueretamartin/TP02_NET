@@ -9,7 +9,7 @@ using Datos;
 namespace Negocio
 {
     public class ControladorUsuario : BusinessLogic
-    {
+    {/*
         public ControladorUsuario()
         {
 
@@ -17,7 +17,7 @@ namespace Negocio
         //Instancio un Adaptador de Usuario
         //Me va a devolver los datos de la BD
        
-        private UsuarioDatos usuarioData = new UsuarioDatos();
+        // private UsuarioDatos usuarioData = new UsuarioDatos();
         
         //Metodo que le pide al Adaptador que le de un usuario
         public Usuario dameUno(int id)
@@ -46,5 +46,6 @@ namespace Negocio
             Usuario usuario = usu;
             usuarioData.EliminarUsuario(usuario.Id);
         }
+    }*/
     }
 }

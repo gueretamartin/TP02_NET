@@ -1,12 +1,11 @@
-using System;
+/* using System;
 using System.Collections.Generic;
 using System.Text;
 using Entidades;
 
 namespace Datos
 {
-    public class UsuarioDatos:Adapter
-    {
+    public class UsuarioDatos
         #region DatosEnMemoria
         // Esta región solo se usa en esta etapa donde los datos se mantienen en memoria.
         // Al modificar este proyecto para que acceda a la base de datos esta será eliminada
@@ -102,3 +101,4 @@ namespace Datos
         }
     }
 }
+*/

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class TipoPersona : BusinessEntity
+    public class TipoPersona : BusinessEntity
     {
         string descripcionTipo;
 

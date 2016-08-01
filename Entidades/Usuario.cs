@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Usuario : BusinessEntity
     {
+        private int idUsuario;
         private string nombreUsuario;
         private string clave;
         private string nombre;
@@ -15,6 +16,18 @@ namespace Entidades
         private string email;
         private bool habilitado;
 
+        public int IdUsuario
+        {
+            get
+            {
+                return idUsuario;
+            }
+
+            set
+            {
+                idUsuario = value;
+            }
+        }
         public string NombreUsuario
         {
             get
