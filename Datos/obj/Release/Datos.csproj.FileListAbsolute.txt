@@ -1,0 +1,7 @@
+C:\Proyectos\TP02_NET\Datos\bin\Release\Datos.dll
+C:\Proyectos\TP02_NET\Datos\bin\Release\Datos.pdb
+C:\Proyectos\TP02_NET\Datos\bin\Release\Entidades.dll
+C:\Proyectos\TP02_NET\Datos\bin\Release\Entidades.pdb
+C:\Proyectos\TP02_NET\Datos\obj\Release\Datos.csprojResolveAssemblyReference.cache
+C:\Proyectos\TP02_NET\Datos\obj\Release\Datos.dll
+C:\Proyectos\TP02_NET\Datos\obj\Release\Datos.pdb

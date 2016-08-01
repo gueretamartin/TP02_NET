@@ -1,0 +1,10 @@
+C:\Proyectos\TP02_NET\Consola\bin\Release\Consola.exe.config
+C:\Proyectos\TP02_NET\Consola\bin\Release\Consola.exe
+C:\Proyectos\TP02_NET\Consola\bin\Release\Consola.pdb
+C:\Proyectos\TP02_NET\Consola\bin\Release\Datos.dll
+C:\Proyectos\TP02_NET\Consola\bin\Release\Entidades.dll
+C:\Proyectos\TP02_NET\Consola\bin\Release\Datos.pdb
+C:\Proyectos\TP02_NET\Consola\bin\Release\Entidades.pdb
+C:\Proyectos\TP02_NET\Consola\obj\Release\Consola.csprojResolveAssemblyReference.cache
+C:\Proyectos\TP02_NET\Consola\obj\Release\Consola.exe
+C:\Proyectos\TP02_NET\Consola\obj\Release\Consola.pdb

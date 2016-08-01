@@ -33,6 +33,11 @@
             this.mnuSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.Editar = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inscripcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,12 +45,16 @@
             // 
             this.mnsPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuArchivo,
-            this.Editar});
+            this.Editar,
+            this.bajaToolStripMenuItem,
+            this.modificarToolStripMenuItem,
+            this.listarToolStripMenuItem});
             this.mnsPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnsPrincipal.Name = "mnsPrincipal";
-            this.mnsPrincipal.Size = new System.Drawing.Size(284, 24);
+            this.mnsPrincipal.Size = new System.Drawing.Size(344, 24);
             this.mnsPrincipal.TabIndex = 1;
             this.mnsPrincipal.Text = "menuStrip1";
+            this.mnsPrincipal.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnsPrincipal_ItemClicked);
             // 
             // mnuArchivo
             // 
@@ -58,36 +67,71 @@
             // mnuSalir
             // 
             this.mnuSalir.Name = "mnuSalir";
-            this.mnuSalir.Size = new System.Drawing.Size(152, 22);
+            this.mnuSalir.Size = new System.Drawing.Size(96, 22);
             this.mnuSalir.Text = "Salir";
             this.mnuSalir.Click += new System.EventHandler(this.mnuSalir_Click);
             // 
             // Editar
             // 
             this.Editar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMUsuariosToolStripMenuItem});
+            this.aBMUsuariosToolStripMenuItem,
+            this.docentesToolStripMenuItem,
+            this.inscripcionToolStripMenuItem});
             this.Editar.Name = "Editar";
-            this.Editar.Size = new System.Drawing.Size(49, 20);
-            this.Editar.Text = "Editar";
+            this.Editar.Size = new System.Drawing.Size(40, 20);
+            this.Editar.Text = "Alta";
             // 
             // aBMUsuariosToolStripMenuItem
             // 
             this.aBMUsuariosToolStripMenuItem.Name = "aBMUsuariosToolStripMenuItem";
             this.aBMUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aBMUsuariosToolStripMenuItem.Text = "ABMUsuarios";
+            this.aBMUsuariosToolStripMenuItem.Text = "Usuarios";
             this.aBMUsuariosToolStripMenuItem.Click += new System.EventHandler(this.aBMUsuariosToolStripMenuItem_Click);
+            // 
+            // docentesToolStripMenuItem
+            // 
+            this.docentesToolStripMenuItem.Name = "docentesToolStripMenuItem";
+            this.docentesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.docentesToolStripMenuItem.Text = "Docentes";
+            this.docentesToolStripMenuItem.Click += new System.EventHandler(this.docentesToolStripMenuItem_Click);
+            // 
+            // bajaToolStripMenuItem
+            // 
+            this.bajaToolStripMenuItem.Name = "bajaToolStripMenuItem";
+            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.bajaToolStripMenuItem.Text = "Baja";
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.modificarToolStripMenuItem.Text = "Modificar";
+            // 
+            // listarToolStripMenuItem
+            // 
+            this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.listarToolStripMenuItem.Text = "Listar";
+            // 
+            // inscripcionToolStripMenuItem
+            // 
+            this.inscripcionToolStripMenuItem.Name = "inscripcionToolStripMenuItem";
+            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inscripcionToolStripMenuItem.Text = "Inscripcion";
+            this.inscripcionToolStripMenuItem.Click += new System.EventHandler(this.inscripcionToolStripMenuItem_Click);
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(344, 279);
             this.Controls.Add(this.mnsPrincipal);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mnsPrincipal;
             this.Name = "formMain";
             this.Text = "Academia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.formMain_Load);
             this.Shown += new System.EventHandler(this.formMain_Shown);
             this.mnsPrincipal.ResumeLayout(false);
             this.mnsPrincipal.PerformLayout();
@@ -103,5 +147,10 @@
         private System.Windows.Forms.ToolStripMenuItem mnuSalir;
         private System.Windows.Forms.ToolStripMenuItem Editar;
         private System.Windows.Forms.ToolStripMenuItem aBMUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem docentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bajaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inscripcionToolStripMenuItem;
     }
 }

@@ -33,7 +33,29 @@ namespace Academia
 
         private void aBMUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Escritorio.ABMUsuarios form = new Escritorio.ABMUsuarios();
+            Escritorio.AltaUsuario form = new Escritorio.AltaUsuario();
+            form.Show();
+        }
+
+        private void formMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void docentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Escritorio.AltaDocente form = new Escritorio.AltaDocente();
+            form.Show();
+        }
+
+        private void mnsPrincipal_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void inscripcionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Escritorio.AltaInscripcion form = new Escritorio.AltaInscripcion();
             form.Show();
         }
     }

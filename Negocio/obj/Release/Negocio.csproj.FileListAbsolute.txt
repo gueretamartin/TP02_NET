@@ -1,0 +1,9 @@
+C:\Proyectos\TP02_NET\Negocio\bin\Release\Negocio.dll
+C:\Proyectos\TP02_NET\Negocio\bin\Release\Negocio.pdb
+C:\Proyectos\TP02_NET\Negocio\bin\Release\Datos.dll
+C:\Proyectos\TP02_NET\Negocio\bin\Release\Entidades.dll
+C:\Proyectos\TP02_NET\Negocio\bin\Release\Datos.pdb
+C:\Proyectos\TP02_NET\Negocio\bin\Release\Entidades.pdb
+C:\Proyectos\TP02_NET\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+C:\Proyectos\TP02_NET\Negocio\obj\Release\Negocio.dll
+C:\Proyectos\TP02_NET\Negocio\obj\Release\Negocio.pdb

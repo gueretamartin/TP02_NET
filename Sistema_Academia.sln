@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{98406EDB-BC98-4CF1-9ADD-DB01251710C7}"
 EndProject
@@ -34,7 +34,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consola", "Consola\Consola.csproj", "{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritorio", "..\..\TP02_NET\Escritorio\Escritorio.csproj", "{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritorio", "Escritorio\Escritorio.csproj", "{E7563232-8DA5-4D6D-A6BB-AAA35AA67A50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,10 +66,10 @@ Global
 		{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7563232-8DA5-4D6D-A6BB-AAA35AA67A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7563232-8DA5-4D6D-A6BB-AAA35AA67A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7563232-8DA5-4D6D-A6BB-AAA35AA67A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7563232-8DA5-4D6D-A6BB-AAA35AA67A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,4 @@
+C:\Proyectos\TP02_NET\Entidades\bin\Release\Entidades.dll
+C:\Proyectos\TP02_NET\Entidades\bin\Release\Entidades.pdb
+C:\Proyectos\TP02_NET\Entidades\obj\Release\Entidades.dll
+C:\Proyectos\TP02_NET\Entidades\obj\Release\Entidades.pdb
