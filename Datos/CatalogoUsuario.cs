@@ -92,7 +92,7 @@ namespace Datos
                 this.getConn();
                 string sql = "INSERT INTO Usuario(id_usuario, nombre_usuario, clave, habilitado, nombre, apellido, email, cambia_clave, id_persona) VALUES(@id_usuario, @nombre_usuario, @clave, @habilitado, @nombre,@apellido, @email, @clave, @id_persona)";
                 SqlCommand cmdUsuarios = new SqlCommand(sql, Con);
-                cmdUsuarios.Parameters.AddWithValue("@id_usuario", us.IdUsuario);
+           //   cmdUsuarios.Parameters.AddWithValue("@id_usuario", us.IdUsuario);
                 cmdUsuarios.Parameters.AddWithValue("@nombre_usuario", us.NombreUsuario);
                 cmdUsuarios.Parameters.AddWithValue("@clave", us.Clave);
                 cmdUsuarios.Parameters.AddWithValue("@habilitado", us.Habilitado);

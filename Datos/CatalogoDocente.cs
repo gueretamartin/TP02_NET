@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidades;
 using System.Data.SqlClient;
-
 namespace Datos
 {
     public class CatalogoDocente : Conexion
@@ -31,27 +30,32 @@ namespace Datos
         #endregion
         #region
         //Methods
+
+        
         public void agregarDocente(Personas doc)
         {
-            int maxID = this.ultimoID() + 1;
+            
             try
             {
                 this.getConn();
-                string sql = "INSERT INTO Personas(idPersonas, apellido, direccion, email, legajo,  nombre, telefono,idPlan, idTipoPersona,) VALUES(@idPersonas, @apellido, @direccion, @email, @legajo,@nombre, @telefono, @idPlan, @idTipoPersona)";
+                string sql = "INSERT INTO Personas (nombre, apellido, direccion, email,  telefono, fecha_nac,legajo,tipo_persona,id_plan) VALUES (@nombre, @apellido, @direccion, @email, @telefono, @fecha_nac, @legajo, @id_tipo_persona,@id_plan)";
                 SqlCommand cmdDocentes = new SqlCommand(sql, Con);
-               // cmdDocentes.Parameters.AddWithValue("@idPersonas", doc.IdPersona);
+                cmdDocentes.Parameters.AddWithValue("@nombre", doc.Nombre);
                 cmdDocentes.Parameters.AddWithValue("@apellido", doc.Apellido);
                 cmdDocentes.Parameters.AddWithValue("@direccion", doc.Direccion);
                 cmdDocentes.Parameters.AddWithValue("@email", doc.Email);
-                cmdDocentes.Parameters.AddWithValue("@legajo", doc.Legajo);
-                cmdDocentes.Parameters.AddWithValue("@nombre", doc.Nombre);
                 cmdDocentes.Parameters.AddWithValue("@telefono", doc.Telefono);
-                //Falta el PLAN Y EL TIPO DE PERSONA
+                cmdDocentes.Parameters.AddWithValue("@fecha_nac", doc.FechaNacimiento);
+                cmdDocentes.Parameters.AddWithValue("@legajo", doc.Legajo);
+                //Modificar y traer un tipo de persona real
+                cmdDocentes.Parameters.AddWithValue("@id_tipo_persona", 1);
+                cmdDocentes.Parameters.AddWithValue("@id_plan", doc.Plan.Id);
                 cmdDocentes.ExecuteNonQuery();
             }
             catch (SqlException e)
             {
                 Console.WriteLine(e.Message);
+                String asd = Console.ReadLine();
             }
             finally
             {

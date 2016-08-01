@@ -11,7 +11,7 @@ namespace Entidades
         private string nombreEspecialidad;
         private string descripcionEspecialidad;
 
-
+     
         public string NombreEspecialidad
         {
             get
