@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Curso
+    class Curso : BusinessEntity
     {
         private int anioCalendario;
         private int cupo;
-        private string descripcion;
+        private string descripcionCurso;
         private Comision comision;
         private Materia materia;
 
@@ -40,16 +40,16 @@ namespace Entidades
             }
         }
 
-        public string Descripcion
+        public string DescripcionCurso
         {
             get
             {
-                return descripcion;
+                return descripcionCurso;
             }
 
             set
             {
-                descripcion = value;
+                descripcionCurso = value;
             }
         }
 

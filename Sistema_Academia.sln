@@ -1,17 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritorio", "Escritorio\Escritorio.csproj", "{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{98406EDB-BC98-4CF1-9ADD-DB01251710C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{5ED83561-47D4-4057-8B8D-457080C5B25E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{CE41376D-0DEA-4B9E-9BDA-2784A9E9C460}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web(17)", "Web", "{D103C057-2421-4078-B66D-2CD422CADE05}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web(2)", "Web\", "{D103C057-2421-4078-B66D-2CD422CADE05}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_2103"
@@ -36,16 +34,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consola", "Consola\Consola.csproj", "{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritorio", "..\..\TP02_NET\Escritorio\Escritorio.csproj", "{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{98406EDB-BC98-4CF1-9ADD-DB01251710C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{98406EDB-BC98-4CF1-9ADD-DB01251710C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98406EDB-BC98-4CF1-9ADD-DB01251710C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -70,6 +66,10 @@ Global
 		{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ACEAB34-7B3C-41C9-80B5-4056D3B47175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F00D3E5-5B5D-4CB9-822E-E9214F8334E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

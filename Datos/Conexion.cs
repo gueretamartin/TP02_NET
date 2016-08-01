@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace Datos
 {
-    class Conexion
+    public class Conexion
     {
         private String dataBase = "academia";
         private SqlConnection con;

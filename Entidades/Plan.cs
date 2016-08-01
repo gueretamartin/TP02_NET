@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Plan : BusinessEntity 
+    public class Plan : BusinessEntity 
     {
-        private string descripcion;
-        private int idEspecialidad;
+        private string descripcionPlan;
+        private Especialidad especialidad;
 
-        public string Descripcion
+        public string DescripcionPlan
         {
             get
             {
-                return descripcion;
+                return descripcionPlan;
             }
 
             set
             {
-                descripcion = value;
+                descripcionPlan = value;
             }
         }
 
-        public int IdEspecialidad
+        public Especialidad Especialidad
         {
             get
             {
-                return idEspecialidad;
+                return especialidad;
             }
 
             set
             {
-                idEspecialidad = value;
+                especialidad = value;
             }
         }
     }

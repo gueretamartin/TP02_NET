@@ -58,3 +58,15 @@ C:\Proyectos\TP02_NET\Consola\bin\Debug\Negocio.pdb
 C:\Proyectos\TP02_NET\Consola\bin\Debug\Datos.pdb
 C:\Proyectos\TP02_NET\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
 C:\Proyectos\TP02_NET\Consola\obj\Debug\Consola.exe
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Consola.exe.config
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\obj\Debug\Consola.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Consola.exe
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Consola.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Entidades.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Negocio.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Datos.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Negocio.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\bin\Debug\Datos.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\net\TP02_NET\Consola\obj\Debug\Consola.exe

@@ -8,21 +8,21 @@ namespace Entidades
 {
     class Materia
     {
-        private string descripcion;
+        private string descripcionMateria;
         private int horasSemanales;
         private int horasTotales;
         private Plan plan;
 
-        public string Descripcion
+        public string DescripcionMateria
         {
             get
             {
-                return descripcion;
+                return descripcionMateria;
             }
 
             set
             {
-                descripcion = value;
+                descripcionMateria = value;
             }
         }
 

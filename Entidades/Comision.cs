@@ -9,7 +9,7 @@ namespace Entidades
     class Comision : BusinessEntity
     {
         private int anioEspecialidad;
-        private string descripcion;
+        private string descripcionComision;
         private Plan plan;
 
         public int AnioEspecialidad
@@ -25,16 +25,16 @@ namespace Entidades
             }
         }
 
-        public string Descripcion
+        public string DescripcionComision
         {
             get
             {
-                return descripcion;
+                return descripcionComision;
             }
 
             set
             {
-                descripcion = value;
+                descripcionComision = value;
             }
         }
 

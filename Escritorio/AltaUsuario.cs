@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Escritorio
 {
-    public partial class Form1 : Form
+    public partial class AltaUsuario : Form
     {
-        public Form1()
+        public AltaUsuario()
         {
             InitializeComponent();
+        }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AltaUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

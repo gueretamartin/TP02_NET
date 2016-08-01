@@ -16,3 +16,8 @@ C:\Proyectos\TP02_NET\Entidades\bin\Debug\Entidades.pdb
 C:\Proyectos\TP02_NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Proyectos\TP02_NET\Entidades\obj\Debug\Entidades.dll
 C:\Proyectos\TP02_NET\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Entidades\bin\Debug\Entidades.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\net\TP02_NET\Entidades\obj\Debug\Entidades.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Entidades\obj\Debug\Entidades.pdb

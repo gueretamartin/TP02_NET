@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Modulo : BusinessEntity
+    class TipoPersona : BusinessEntity
     {
-        private string descripcionModulo;
+        string descripcionTipo;
 
-        public string DescripcionModulo
+
+        public string DescripcionTipo
         {
             get
             {
-                return descripcionModulo;
+                return descripcionTipo;
+
             }
 
             set
             {
-                descripcionModulo = value;
+                descripcionTipo = value;
             }
         }
+
     }
 }

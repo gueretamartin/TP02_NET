@@ -34,3 +34,12 @@ C:\Proyectos\TP02_NET\Negocio\bin\Debug\Entidades.pdb
 C:\Proyectos\TP02_NET\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Proyectos\TP02_NET\Negocio\obj\Debug\Negocio.dll
 C:\Proyectos\TP02_NET\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\bin\Debug\Negocio.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\bin\Debug\Datos.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\bin\Debug\Entidades.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\bin\Debug\Datos.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\obj\Debug\Negocio.dll
+C:\Users\Martin\Desktop\net\TP02_NET\Negocio\obj\Debug\Negocio.pdb

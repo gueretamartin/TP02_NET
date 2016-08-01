@@ -8,18 +8,34 @@ namespace Entidades
 {
     class Especialidad : BusinessEntity
     {
-        private string descripcion;
+        private string nombreEspecialidad;
+        private string descripcionEspecialidad;
 
-        public string Descripcion
+
+        public string NombreEspecialidad
         {
             get
             {
-                return descripcion;
+                return nombreEspecialidad;
+                  
             }
 
             set
             {
-                descripcion = value;
+                nombreEspecialidad = value;
+            }
+        }
+
+        public string DescripcionEspecialidad
+        {
+            get
+            {
+                return descripcionEspecialidad;
+            }
+
+            set
+            {
+                descripcionEspecialidad = value;
             }
         }
     }
