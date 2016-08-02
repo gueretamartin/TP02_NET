@@ -12,7 +12,8 @@ namespace Datos
     {
         #region
         //Vars
-        static List<Plan> planes = new List<Plan>();
+        
+        
         #endregion
         #region
         //Singleton
@@ -33,6 +34,7 @@ namespace Datos
         //Methods
         public List<Plan> buscarPlanes()
         {
+            List<Plan> planes = new List<Plan>();
             String query = "select * from planes";
             try
             {
@@ -43,10 +45,10 @@ namespace Datos
                 while (dr.Read())
                 {
                     Plan plan = new Plan();
-                    plan.DescripcionPlan = (string)dr["descripcionPlan"];
+                    plan.Id = (int)dr["id_plan"];
+                    plan.DescripcionPlan = (string)dr["desc_plan"];
                     Especialidad esp = new Especialidad();
-                    //No se si esta bien, le pido al C. de Especialidad que me devuelva la especialidad
-                    plan.Especialidad = new CatalogoEspecialidad().dameUno((int)dr["idEspecialidad"]);
+                    plan.Especialidad = new CatalogoEspecialidad().dameUno((int)dr["id_especialidad"]);
                     planes.Add(plan);
                 }
                 dr.Close();

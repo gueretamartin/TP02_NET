@@ -46,57 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AltaDocente.cs">
+    <Compile Include="Docente\AltaDocente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaDocente.Designer.cs">
+    <Compile Include="Docente\AltaDocente.Designer.cs">
       <DependentUpon>AltaDocente.cs</DependentUpon>
     </Compile>
-    <Compile Include="AltaEspecialidad.cs">
+    <Compile Include="Especialidad\AltaEspecialidad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaEspecialidad.Designer.cs">
+    <Compile Include="Especialidad\AltaEspecialidad.Designer.cs">
       <DependentUpon>AltaEspecialidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="AltaInscripcion.cs">
+    <Compile Include="Inscripcion\AltaInscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaInscripcion.Designer.cs">
+    <Compile Include="Inscripcion\AltaInscripcion.Designer.cs">
       <DependentUpon>AltaInscripcion.cs</DependentUpon>
     </Compile>
-    <Compile Include="AltaUsuario.cs">
+    <Compile Include="Main and FormBase\FormBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaUsuario.Designer.cs">
+    <Compile Include="Main and FormBase\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\AltaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\AltaUsuario.Designer.cs">
       <DependentUpon>AltaUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="formLogin.cs">
+    <Compile Include="Main and FormBase\formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formLogin.designer.cs">
+    <Compile Include="Main and FormBase\formLogin.designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="formMain.cs">
+    <Compile Include="Main and FormBase\formMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMain.designer.cs">
+    <Compile Include="Main and FormBase\formMain.designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListarPlanes.cs">
+    <Compile Include="Plan\ListarPlanes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarPlanes.Designer.cs">
+    <Compile Include="Plan\ListarPlanes.Designer.cs">
       <DependentUpon>ListarPlanes.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AltaDocente.resx" />
-    <EmbeddedResource Include="AltaEspecialidad.resx" />
-    <EmbeddedResource Include="AltaInscripcion.resx" />
-    <EmbeddedResource Include="AltaUsuario.resx" />
-    <EmbeddedResource Include="formLogin.resx" />
-    <EmbeddedResource Include="formMain.resx" />
-    <EmbeddedResource Include="ListarPlanes.resx" />
+    <EmbeddedResource Include="Docente\AltaDocente.resx" />
+    <EmbeddedResource Include="Especialidad\AltaEspecialidad.resx" />
+    <EmbeddedResource Include="Inscripcion\AltaInscripcion.resx" />
+    <EmbeddedResource Include="Usuario\AltaUsuario.resx" />
+    <EmbeddedResource Include="Main and FormBase\formLogin.resx" />
+    <EmbeddedResource Include="Main and FormBase\formMain.resx" />
+    <EmbeddedResource Include="Plan\ListarPlanes.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,6 +112,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Negocio.BusinessLogic.datasource" />
+    <None Include="Properties\DataSources\Negocio.ControladorDocentes.datasource" />
+    <None Include="Properties\DataSources\Negocio.ControladorPlanes.datasource" />
+    <None Include="Properties\DataSources\Negocio.ControladorUsuario.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

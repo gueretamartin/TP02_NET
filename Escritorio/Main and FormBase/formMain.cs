@@ -59,7 +59,11 @@ namespace Academia
             form.Show();
         }
 
-        
+        private void planesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Escritorio.ListarPlanes form = new Escritorio.ListarPlanes();
+            form.Show();
+        }
     }
 }
 

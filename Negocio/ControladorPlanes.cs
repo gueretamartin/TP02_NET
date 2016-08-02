@@ -23,5 +23,12 @@ namespace Negocio
             p = cp.dameUnPlan(id);
             return p;
         }
+
+        public List<Plan> getAllPlanes()
+        {
+            List<Plan> planes = new List<Plan>();
+            planes = cp.buscarPlanes();
+            return planes;
+        }
     }
 }

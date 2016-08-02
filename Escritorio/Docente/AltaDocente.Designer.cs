@@ -1,4 +1,9 @@
-﻿namespace Escritorio
+﻿using Entidades;
+using Negocio;
+using System;
+using System.Collections.Generic;
+
+namespace Escritorio
 {
     partial class AltaDocente
     {
@@ -43,9 +48,7 @@
             this.lblLegajoDocente = new System.Windows.Forms.Label();
             this.textTelefonoDocente = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.seleccionarPlan = new System.Windows.Forms.Button();
             this.dTPFechaNacimiendoDocente = new System.Windows.Forms.DateTimePicker();
-            this.textIdPlan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -54,13 +57,14 @@
             this.cbmodificar = new System.Windows.Forms.RadioButton();
             this.cbagregar = new System.Windows.Forms.RadioButton();
             this.gb2 = new System.Windows.Forms.GroupBox();
+            this.cbPlanes = new System.Windows.Forms.ComboBox();
             this.gbOpciones.SuspendLayout();
             this.gb2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(68, 384);
+            this.btnLimpiar.Location = new System.Drawing.Point(68, 333);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(83, 23);
             this.btnLimpiar.TabIndex = 23;
@@ -69,7 +73,7 @@
             // 
             // btnAgregarUsuario
             // 
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(195, 384);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(195, 333);
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
             this.btnAgregarUsuario.Size = new System.Drawing.Size(190, 23);
             this.btnAgregarUsuario.TabIndex = 22;
@@ -184,16 +188,6 @@
             this.lblTelefono.Text = "Telefono:";
             this.lblTelefono.Click += new System.EventHandler(this.label2_Click);
             // 
-            // seleccionarPlan
-            // 
-            this.seleccionarPlan.Location = new System.Drawing.Point(68, 310);
-            this.seleccionarPlan.Name = "seleccionarPlan";
-            this.seleccionarPlan.Size = new System.Drawing.Size(317, 23);
-            this.seleccionarPlan.TabIndex = 28;
-            this.seleccionarPlan.Text = "Ver Planes";
-            this.seleccionarPlan.UseVisualStyleBackColor = true;
-            this.seleccionarPlan.Click += new System.EventHandler(this.seleccionarPlan_Click);
-            // 
             // dTPFechaNacimiendoDocente
             // 
             this.dTPFechaNacimiendoDocente.Location = new System.Drawing.Point(185, 179);
@@ -201,25 +195,18 @@
             this.dTPFechaNacimiendoDocente.Size = new System.Drawing.Size(200, 20);
             this.dTPFechaNacimiendoDocente.TabIndex = 29;
             // 
-            // textIdPlan
-            // 
-            this.textIdPlan.Location = new System.Drawing.Point(185, 273);
-            this.textIdPlan.Name = "textIdPlan";
-            this.textIdPlan.Size = new System.Drawing.Size(200, 20);
-            this.textIdPlan.TabIndex = 31;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 276);
+            this.label1.Location = new System.Drawing.Point(65, 273);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Id Plan";
+            this.label1.Text = "Plan";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(195, 442);
+            this.btnEliminar.Location = new System.Drawing.Point(195, 333);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(190, 23);
             this.btnEliminar.TabIndex = 32;
@@ -229,7 +216,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(195, 413);
+            this.btnModificar.Location = new System.Drawing.Point(195, 333);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(190, 23);
             this.btnModificar.TabIndex = 33;
@@ -287,19 +274,18 @@
             // 
             // gb2
             // 
+            this.gb2.Controls.Add(this.cbPlanes);
             this.gb2.Controls.Add(this.lblNombreDocente);
             this.gb2.Controls.Add(this.lblApellidoDocente);
             this.gb2.Controls.Add(this.btnModificar);
             this.gb2.Controls.Add(this.lblDireccionDocente);
             this.gb2.Controls.Add(this.btnEliminar);
             this.gb2.Controls.Add(this.lblMailDocente);
-            this.gb2.Controls.Add(this.textIdPlan);
             this.gb2.Controls.Add(this.lblFechaNacimientoDocente);
             this.gb2.Controls.Add(this.label1);
             this.gb2.Controls.Add(this.textNombreDocente);
             this.gb2.Controls.Add(this.dTPFechaNacimiendoDocente);
             this.gb2.Controls.Add(this.textApellidoDocente);
-            this.gb2.Controls.Add(this.seleccionarPlan);
             this.gb2.Controls.Add(this.textDireccionDocente);
             this.gb2.Controls.Add(this.textTelefonoDocente);
             this.gb2.Controls.Add(this.textMailDocente);
@@ -308,18 +294,31 @@
             this.gb2.Controls.Add(this.textLegajoDocente);
             this.gb2.Controls.Add(this.btnLimpiar);
             this.gb2.Controls.Add(this.lblLegajoDocente);
-            this.gb2.Location = new System.Drawing.Point(12, 82);
+            this.gb2.Location = new System.Drawing.Point(37, 82);
             this.gb2.Name = "gb2";
-            this.gb2.Size = new System.Drawing.Size(480, 500);
+            this.gb2.Size = new System.Drawing.Size(440, 374);
             this.gb2.TabIndex = 35;
             this.gb2.TabStop = false;
             // 
+            // cbPlanes
+            // 
+            this.cbPlanes.FormattingEnabled = true;
+            this.cbPlanes.Location = new System.Drawing.Point(185, 273);
+            this.cbPlanes.Name = "cbPlanes";
+            this.cbPlanes.Size = new System.Drawing.Size(200, 21);
+            this.cbPlanes.TabIndex = 34;
+            this.cbPlanes.SelectedIndexChanged += new System.EventHandler(this.cbPlanes_SelectedIndexChanged);
+            
+            
+            this.cbPlanes.DataSource = new ControladorPlanes().getAllPlanes();
+            this.cbPlanes.DisplayMember = "DescripcionPlan";
+            this.cbPlanes.ValueMember = "Id";
             // AltaDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(504, 589);
+            this.ClientSize = new System.Drawing.Size(531, 481);
             this.Controls.Add(this.gb2);
             this.Controls.Add(this.gbOpciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -332,6 +331,8 @@
             this.ResumeLayout(false);
 
         }
+
+      
 
         #endregion
 
@@ -350,9 +351,7 @@
         private System.Windows.Forms.Label lblLegajoDocente;
         private System.Windows.Forms.TextBox textTelefonoDocente;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.Button seleccionarPlan;
         private System.Windows.Forms.DateTimePicker dTPFechaNacimiendoDocente;
-        private System.Windows.Forms.TextBox textIdPlan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
@@ -361,5 +360,6 @@
         private System.Windows.Forms.RadioButton cbmodificar;
         private System.Windows.Forms.RadioButton cbagregar;
         private System.Windows.Forms.GroupBox gb2;
+        private System.Windows.Forms.ComboBox cbPlanes;
     }
 }

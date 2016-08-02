@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BusinessLogic.cs" />
     <Compile Include="ControladorDocentes.cs" />
+    <Compile Include="ControladorPersonas.cs" />
     <Compile Include="ControladorPlanes.cs" />
     <Compile Include="ControladorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

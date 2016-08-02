@@ -8,7 +8,6 @@ namespace Entidades
 {
     public class Personas : BusinessEntity
     {
-        private int idPersonas;
         private string apellido;
         private string direccion;
         private string email;
@@ -20,18 +19,7 @@ namespace Entidades
         private TipoPersona tipoPersona;
 
 
-        public int IdPersonas
-        {
-            get
-            {
-                return idPersonas;
-            }
-
-            set
-            {
-                idPersonas = value;
-            }
-        }
+        
         public string Apellido
         {
             get

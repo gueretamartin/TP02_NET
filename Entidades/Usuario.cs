@@ -14,7 +14,15 @@ namespace Entidades
         private string apellido;
         private string email;
         private bool habilitado;
+        private Personas persona;
 
+        #region Propiedades
+
+        public Personas Persona
+        {
+            get { return persona; }
+            set { persona = value; }
+        }
       
         public string NombreUsuario
         {
@@ -94,7 +102,11 @@ namespace Entidades
             }
         }
 
-        public  Usuario(string nombreUsu, string clave, string nombre, string apellido, string email, bool habilitado) {
+        #endregion
+
+        #region Constructores
+
+        public Usuario(string nombreUsu, string clave, string nombre, string apellido, string email, bool habilitado) {
 
             this.NombreUsuario = nombreUsu;
             this.Clave = clave;
@@ -104,5 +116,6 @@ namespace Entidades
             this.Habilitado = habilitado;
         }
         public Usuario() { }
+        #endregion
     }
 }

@@ -14,7 +14,8 @@ namespace Escritorio
 {
     public partial class AltaDocente : Form
     {
-       ControladorDocentes cd = new ControladorDocentes();
+        Personas p = new Personas();
+        ControladorDocentes cd = new ControladorDocentes();
         public AltaDocente()
         {
             InitializeComponent();
@@ -35,9 +36,7 @@ namespace Escritorio
             Plan plan = new Plan();
             ControladorPlanes cp = new ControladorPlanes();
             ControladorDocentes cd = new ControladorDocentes();
-            plan = cp.dameUnPlan(Convert.ToInt32(textIdPlan.Text));
-          
-            Personas p = new Personas();
+            plan = (Plan)cbPlanes.SelectedItem;
             p.Plan = plan;
             p.Apellido = textApellidoDocente.Text;
             p.Nombre = textNombreDocente.Text;
@@ -56,7 +55,9 @@ namespace Escritorio
 
         private void seleccionarPlan_Click(object sender, EventArgs e)
         {
-            cd.dameTodosPlanes();
+            Escritorio.ListarPlanes f = new ListarPlanes();
+            f.ShowDialog(this);
+           
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -94,6 +95,11 @@ namespace Escritorio
             btnEliminar.Show();
             btnAgregarUsuario.Hide();
             btnModificar.Hide();
+        }
+
+        private void cbPlanes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

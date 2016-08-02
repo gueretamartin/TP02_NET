@@ -47,5 +47,19 @@ namespace Negocio
             usuarioData.EliminarUsuario(usuario.Id);
         }
     }*/
+        public Usuario getUsuario(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Usuario GetUsuario(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GuardarUsuario(Usuario usuarioActual)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

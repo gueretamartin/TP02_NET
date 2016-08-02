@@ -1,6 +1,6 @@
-﻿namespace Escritorio
+﻿namespace Escritorio.Main_and_FormBase
 {
-    partial class ListarPlanes
+    partial class FormBase
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(592, 405);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // ListarPlanes
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 429);
-            this.Controls.Add(this.listView1);
-            this.Name = "ListarPlanes";
-            this.Text = "Planes";
-            this.ResumeLayout(false);
-
+            this.Text = "FormBase";
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
     }
 }
