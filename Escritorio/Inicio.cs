@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Escritorio
 {
-    static class Program
+    static class Inicio
     {
         /// <summary>
         /// The main entry point for the application.

@@ -18,3 +18,4 @@ C:\Proyectos\TP02_NET\Escritorio\obj\Debug\Escritorio.Properties.Resources.resou
 C:\Proyectos\TP02_NET\Escritorio\obj\Debug\Escritorio.csproj.GenerateResource.Cache
 C:\Proyectos\TP02_NET\Escritorio\obj\Debug\Escritorio.exe
 C:\Proyectos\TP02_NET\Escritorio\obj\Debug\Escritorio.pdb
+C:\Proyectos\TP02_NET\Escritorio\obj\Debug\Escritorio.csprojResolveAssemblyReference.cache

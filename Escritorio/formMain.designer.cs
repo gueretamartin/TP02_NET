@@ -34,10 +34,8 @@
             this.Editar = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscripcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,8 +44,6 @@
             this.mnsPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuArchivo,
             this.Editar,
-            this.bajaToolStripMenuItem,
-            this.modificarToolStripMenuItem,
             this.listarToolStripMenuItem});
             this.mnsPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnsPrincipal.Name = "mnsPrincipal";
@@ -84,41 +80,29 @@
             // aBMUsuariosToolStripMenuItem
             // 
             this.aBMUsuariosToolStripMenuItem.Name = "aBMUsuariosToolStripMenuItem";
-            this.aBMUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aBMUsuariosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.aBMUsuariosToolStripMenuItem.Text = "Usuarios";
             this.aBMUsuariosToolStripMenuItem.Click += new System.EventHandler(this.aBMUsuariosToolStripMenuItem_Click);
             // 
             // docentesToolStripMenuItem
             // 
             this.docentesToolStripMenuItem.Name = "docentesToolStripMenuItem";
-            this.docentesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.docentesToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.docentesToolStripMenuItem.Text = "Docentes";
             this.docentesToolStripMenuItem.Click += new System.EventHandler(this.docentesToolStripMenuItem_Click);
             // 
-            // bajaToolStripMenuItem
+            // inscripcionToolStripMenuItem
             // 
-            this.bajaToolStripMenuItem.Name = "bajaToolStripMenuItem";
-            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.bajaToolStripMenuItem.Text = "Baja";
-            // 
-            // modificarToolStripMenuItem
-            // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.modificarToolStripMenuItem.Text = "Modificar";
+            this.inscripcionToolStripMenuItem.Name = "inscripcionToolStripMenuItem";
+            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.inscripcionToolStripMenuItem.Text = "Inscripcion";
+            this.inscripcionToolStripMenuItem.Click += new System.EventHandler(this.inscripcionToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
             this.listarToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.listarToolStripMenuItem.Text = "Listar";
-            // 
-            // inscripcionToolStripMenuItem
-            // 
-            this.inscripcionToolStripMenuItem.Name = "inscripcionToolStripMenuItem";
-            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.inscripcionToolStripMenuItem.Text = "Inscripcion";
-            this.inscripcionToolStripMenuItem.Click += new System.EventHandler(this.inscripcionToolStripMenuItem_Click);
             // 
             // formMain
             // 
@@ -148,8 +132,6 @@
         private System.Windows.Forms.ToolStripMenuItem Editar;
         private System.Windows.Forms.ToolStripMenuItem aBMUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem docentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bajaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inscripcionToolStripMenuItem;
     }

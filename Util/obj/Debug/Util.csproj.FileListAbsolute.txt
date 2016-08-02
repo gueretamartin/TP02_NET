@@ -12,3 +12,8 @@ C:\Users\Martin\Desktop\net\TP02_NET\Util\bin\Debug\Util.pdb
 C:\Users\Martin\Desktop\net\TP02_NET\Util\obj\Debug\Util.dll
 C:\Users\Martin\Desktop\net\TP02_NET\Util\obj\Debug\Util.pdb
 C:\Users\Martin\Desktop\net\TP02_NET\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+C:\Proyectos\TP02_NET\Util\bin\Debug\Util.dll
+C:\Proyectos\TP02_NET\Util\bin\Debug\Util.pdb
+C:\Proyectos\TP02_NET\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+C:\Proyectos\TP02_NET\Util\obj\Debug\Util.dll
+C:\Proyectos\TP02_NET\Util\obj\Debug\Util.pdb

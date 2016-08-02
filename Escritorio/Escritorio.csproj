@@ -49,32 +49,46 @@
     <Compile Include="AltaDocente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaDocente.Designer.cs" />
+    <Compile Include="AltaDocente.Designer.cs">
+      <DependentUpon>AltaDocente.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaEspecialidad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaEspecialidad.Designer.cs" />
+    <Compile Include="AltaEspecialidad.Designer.cs">
+      <DependentUpon>AltaEspecialidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaInscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaInscripcion.Designer.cs" />
+    <Compile Include="AltaInscripcion.Designer.cs">
+      <DependentUpon>AltaInscripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaUsuario.Designer.cs" />
+    <Compile Include="AltaUsuario.Designer.cs">
+      <DependentUpon>AltaUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formLogin.designer.cs" />
+    <Compile Include="formLogin.designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMain.designer.cs" />
+    <Compile Include="formMain.designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarPlanes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarPlanes.Designer.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ListarPlanes.Designer.cs">
+      <DependentUpon>ListarPlanes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AltaDocente.resx" />
     <EmbeddedResource Include="AltaEspecialidad.resx" />

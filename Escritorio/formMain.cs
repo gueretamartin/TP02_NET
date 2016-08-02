@@ -58,6 +58,8 @@ namespace Academia
             Escritorio.AltaInscripcion form = new Escritorio.AltaInscripcion();
             form.Show();
         }
+
+        
     }
 }
 
