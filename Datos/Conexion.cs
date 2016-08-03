@@ -12,6 +12,9 @@ namespace Datos
         private String usuario = "root";
         private String contraseña = "root";
 
+        //Clave por defecto a utlizar para la cadena de conexion
+        const string consKeyDefaultCnnString = "ConnStringLocal";
+
         public SqlConnection Con
         {
             get

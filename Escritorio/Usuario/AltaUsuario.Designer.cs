@@ -217,6 +217,7 @@
             this.cmbPersonas.Name = "cmbPersonas";
             this.cmbPersonas.Size = new System.Drawing.Size(266, 21);
             this.cmbPersonas.TabIndex = 26;
+            this.cmbPersonas.SelectedIndexChanged += new System.EventHandler(this.cmbPersonas_SelectedIndexChanged);
             // 
             // lblPersona
             // 
